@@ -1,15 +1,16 @@
-1.Trigger the workflow when a new message arrives.
+Click Execute workflow — trigger fires.
 
-2.Load the workflow configuration settings.
+Trigger sends an outgoing message
 
-3.Fetch emails from Gmail Account 1.
+When chat message received, it is forwarded to AI Agent.
 
-4.Fetch emails from Gmail Account 2.
+AI Agent (Google Gemini Chat Model) processes the chat using its model/memory/tools and generates a response.
 
-5.Merge all emails from both accounts.
+On form submission, the form data is sent to AI Agent1.
 
-6.Analyze the merged emails using the AI Email Analyzer.
+AI Agent1 (Google Gemini) processes the form input and prepares a reply.
 
-7.Format the analyzed result into a Slack-ready message.
+AI Agent1 sends Send a message2 
 
-8.Send the final formatted message to Slack.<img width="1329" height="433" alt="Screenshot 2025-11-21 142046" src="https://github.com/user-attachments/assets/7d3fc3b6-3d85-408d-bb12-811e484b41d4" />
+On schedule trigger, the scheduled action fires and Send a message is executed.
+<img width="446" height="480" alt="image" src="https://github.com/user-attachments/assets/b8e25d7f-4b9c-44bd-a731-b68f48026b28" />
